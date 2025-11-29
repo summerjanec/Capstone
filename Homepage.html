@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+<style>
+
+  body {
+    background: seagreen;
+    margin: 0;
+    padding: 0;
+  }
+
+  #page {
+    max-width: 928px;
+    background: white;
+    border: 5px ridge goldenrod;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    font: bold 48px/1.4em 'Nova Square';
+    color: goldenrod;
+  } nav {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  } nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } nav li {
+    display: inline-block;
+    margin: 0 15px;
+  } nav a {
+    font-family: 'Nova Square';
+    font-size: 20px;
+    color: seagreen;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+  } nav a:hover {
+    background: maroon;
+    color: white;
+  } .hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  } .hero img {
+    width: 50%;
+    height: auto;
+  } .hero p {
+    font: 13pt/2.3em 'Itim';
+    margin: 0;
+    text-align: left;
+  } @media screen and (max-width: 750px) {
+    #page {
+      width: 95%;
+      margin: 10px auto;
+      border: 3px ridge slategray;
+      padding: 10px;
+  } h1 {
+      font-size: 32px;
+      line-height: 1.3em;
+  } nav a {
+      font-size: 18px;
+      display: inline-block;
+      margin: 5px 10px;
+  } .hero {
+      flex-direction: column;
+  } .hero img {
+      width: 100%;
+  } .hero p {
+      width: 100%;
+      font-size: 15pt;
+      line-height: 2em;
+      margin-top: 15px;
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+  <div id="page">
+
+    <h1>Summer Cardozo</h1>
+    <nav>
+      <ul>
+        <li><a href="Capstone/Homepage.html">Home</a></li>
+        <li><a href="Javascript-main/Javascript.html">About Me</a></li>
+        <li><a href="PortfolioPage-main/Portfolio.html">Portfolio</a></li>
+        <li><a href="Contact-main/ContactForm.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <img src="dinosaur.png" alt="Banner Image">
+      <p>Welcome! Discover my cute and comforting works through my portfolio!</p>
+    </div>
+
+  </div>
+</body>
+</html>
